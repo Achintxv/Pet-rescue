@@ -1,7 +1,7 @@
 # 🐾 Pawfect Rescue - A Pet Adoption Platform
 
 ## 📌 Project Overview
-Pawfect Rescue is a pet adoption website inspired by [PetRescue](https://www.petrescue.com.au/). It helps connect rescue animals with potential adopters by providing an interactive, user-friendly platform to browse pets, learn about adoption, and support the cause.
+Pawfect Rescue is a pet adoption website. It helps connect rescue animals with potential adopters by providing an interactive, user-friendly platform to browse pets, learn about adoption, and support the cause.
 
 ## 🚀 Features
 ### 🏡 Adoption Features
