@@ -51,8 +51,5 @@ Pawfect Rescue/
 ## 💌 Contributing
 Have ideas? Open an issue or submit a pull request!
 
-## 📜 License
-This project is open-source under the MIT License.
-
 🐾 **Adopt, don’t shop! Help give rescue pets a second chance!**
 
