@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Other Animals Adoption Listings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Find Your Unique Companion</h1>
+    <p>Adopt an adorable pet today!</p>
+  </header>
+
+  <div class="container">
+    <!-- Filter Sidebar -->
+    <aside class="filter-bar">
+      <h3>Filter By Category</h3>
+      <label><input type="checkbox" class="filter-checkbox" value="Bunny"> Bunny</label>
+      <label><input type="checkbox" class="filter-checkbox" value="Bird"> Bird</label>
+      <label><input type="checkbox" class="filter-checkbox" value="Fish"> Fish</label>
+      <label><input type="checkbox" class="filter-checkbox" value="Turtle"> Turtle</label>
+      <label><input type="checkbox" class="filter-checkbox" value="Hamster"> Hamster</label>
+      <button id="clear-filters">Clear Filters</button>
+    </aside>
+
+    <!-- Animal Listings -->
+    <section class="pet-listings">
+      <div class="pet-card" data-breed="Bunny">
+        <img src="Photos\Animals\bunny.jpeg" alt="Bunny" />
+        <div class="pet-info">
+          <h2>Thumper</h2>
+          <p><strong>Animal:</strong> Bunny</p>
+          <p><strong>Location:</strong> Gt Road, Delhi</p>
+          <button class="adopt-btn"
+          data-name="Thumper"
+          data-breed="Bunny"
+          data-location="Gt Road, Delhi"
+          data-image="Photos\Animals\bunny.jpeg">Adopt Me</button>
+        </div>
+      </div>
+
+      <div class="pet-card" data-breed="Bird">
+        <img src="Photos\Animals\bird.jpg" alt="Bird" />
+        <div class="pet-info">
+          <h2>Kiwi</h2>
+          <p><strong>Animal:</strong> Bird</p>
+          <p><strong>Location:</strong> Santragachi,West Bengal</p>
+          <button class="adopt-btn"
+          data-name="Kiwi"
+          data-breed="Bird"
+          data-location="Santragachi,West Bengal"
+          data-image="Photos\Animals\bird.jpg">Adopt Me</button>
+        </div>
+      </div>
+
+      <div class="pet-card" data-breed="Fish">
+        <img src="Photos\Animals\anglerFish.jpg" alt="Fish" />
+        <div class="pet-info">
+          <h2>Bubbles</h2>
+          <p><strong>Animal:</strong> Fish</p>
+          <p><strong>Location:</strong> Bandra,Mumbai</p>
+          <button class="adopt-btn"
+          data-name="Bubbles"
+          data-breed="Fish"
+          data-location="Bandra,Mumbai"
+          data-image="Photos\Animals\anglerFish.jpg">Adopt Me</button>
+        </div>
+      </div>
+
+      <div class="pet-card" data-breed="Turtle">
+        <img src="Photos\Animals\turtle.png" alt="Turtle" />
+        <div class="pet-info">
+          <h2>Speedy</h2>
+          <p><strong>Animal:</strong> Turtle</p>
+          <p><strong>Location:</strong> vizag, Andra Pradesh</p>
+          <button class="adopt-btn"
+          data-name="Speedy"
+          data-breed="Turtle"
+          data-location="vizag, Andra Pradesh"
+          data-image="Photos\Animals\turtle.png">Adopt Me</button>
+        </div>
+      </div>
+
+      <div class="pet-card" data-breed="Hamster">
+        <img src="Photos\Animals\hamster.jpg" alt="Hamster" />
+        <div class="pet-info">
+          <h2>Nibbles</h2>
+          <p><strong>Animal:</strong> Hamster</p>
+          <p><strong>Location:</strong> Ajmer, Rajasthan</p>
+          <button class="adopt-btn"
+          data-name="Nibbles"
+          data-breed="Hamster"
+          data-location="Ajmer, Rajasthan"
+          data-image="Photos\Animals\hamster.jpg">Adopt Me</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

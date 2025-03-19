@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Adoption Listings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Find Your New Best Friend</h1>
+    <p>Adopt a dog today!</p>
+  </header>
+
+  <div class="container">
+    <!-- Filter Sidebar -->
+    <aside class="filter-bar">
+      <h3>Filter By Category</h3>
+      <label>
+        <input type="checkbox" class="filter-checkbox" value="Labrador Retriever"> Labrador Retriever
+      </label>
+      <label>
+        <input type="checkbox" class="filter-checkbox" value="Border Collie"> Border Collie
+      </label>
+      <label>
+        <input type="checkbox" class="filter-checkbox" value="Golden Retriever"> Golden Retriever
+      </label>
+      <label>
+        <input type="checkbox" class="filter-checkbox" value="Beagle"> Beagle
+      </label>
+      <button id="clear-filters">Clear Filters</button>
+    </aside>
+
+    <!-- Dog Listings -->
+    <section class="pet-listings" id="pet-listings">
+      <div class="pet-card" data-breed="Labrador Retriever">
+        <img src="https://placedog.net/400/300?id=1" alt="Dog 1" />
+        <div class="pet-info">
+          <h2>Max</h2>
+          <p><strong>Breed:</strong> Labrador Retriever</p>
+          <p><strong>Location:</strong> Bhubaneshwar, Odisha</p>
+          <button 
+            class="adopt-btn"
+            data-name="Max"
+            data-breed="Labrador Retriever"
+            data-location="Bhubaneshwar, Odisha"
+            data-image="https://placedog.net/400/300?id=1">Adopt Me</button>
+        </div>
+      </div>
+
+      <div class="pet-card" data-breed="Border Collie">
+        <img src="https://placedog.net/400/300?id=2" alt="Dog 2" />
+        <div class="pet-info">
+          <h2>Bella</h2>
+          <p><strong>Breed:</strong> Border Collie</p>
+          <p><strong>Location:</strong> Sector 50,Noida</p>
+          <button 
+            class="adopt-btn"
+            data-name="Bella"
+            data-breed="Border Collie"
+            data-location="Sector 50,Noida"
+            data-image="https://placedog.net/400/300?id=2"
+          >
+            Adopt Me
+          </button>
+        </div>
+      </div>
+
+      <div class="pet-card" data-breed="Golden Retriever">
+        <img src="https://placedog.net/400/300?id=3" alt="Dog 3" />
+        <div class="pet-info">
+          <h2>Charlie</h2>
+          <p><strong>Breed:</strong> Golden Retriever</p>
+          <p><strong>Location:</strong> Patia, Odisha</p>
+          <button 
+            class="adopt-btn"
+            data-name="Charlie"
+            data-breed="Golden Retriever"
+            data-location="Patia, Odisha"
+            data-image="https://placedog.net/400/300?id=3"
+          >
+            Adopt Me
+          </button>
+        </div>
+      </div>
+
+      <div class="pet-card" data-breed="Beagle">
+        <img src="https://placedog.net/400/300?id=4" alt="Dog 4" />
+        <div class="pet-info">
+          <h2>Daisy</h2>
+          <p><strong>Breed:</strong> Beagle</p>
+          <p><strong>Location:</strong> Bhuj, Gujrat</p>
+          <button 
+            class="adopt-btn"
+            data-name="Daisy"
+            data-breed="Beagle"
+            data-location="Bhuj, Gujrat
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            "
+            data-image="https://placedog.net/400/300?id=4"
+          >
+            Adopt Me
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cat Adoption Listings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Find Your Purr-fect Friend</h1>
+    <p>Adopt a cat today!</p>
+  </header>
+
+  <div class="container">
+    <!-- Filter Sidebar -->
+    <aside class="filter-bar">
+      <h3>Filter By Category</h3>
+      <label>
+        <input type="checkbox" class="filter-checkbox" value="Persian"> Persian
+      </label>
+      <label>
+        <input type="checkbox" class="filter-checkbox" value="Maine Coon"> Maine Coon
+      </label>
+      <label>
+        <input type="checkbox" class="filter-checkbox" value="Siamese"> Siamese
+      </label>
+      <label>
+        <input type="checkbox" class="filter-checkbox" value="Bengal"> Bengal
+      </label>
+      <button id="clear-filters">Clear Filters</button>
+    </aside>
+
+    <!-- Cat Listings -->
+    <section class="pet-listings" id="pet-listings">
+      <div class="pet-card" data-breed="Persian">
+        <img src="Photos\Cat\persiancat.jpg" alt="Cat 1" />
+        <div class="pet-info">
+          <h2>Luna</h2>
+          <p><strong>Breed:</strong> Persian</p>
+          <p><strong>Location:</strong> kalyan, Maharashtra</p>
+          <button class="adopt-btn"
+          data-name="Luna"
+          data-breed="Persian"
+          data-location="kalyan, Maharashtra"
+          data-image="Photos\Cat\persiancat.jpg">Adopt Me</button>
+        </div>
+      </div>
+
+      <div class="pet-card" data-breed="Maine Coon">
+        <img src="Photos\Cat\MaineCoonCat.jpg" alt="Cat 2" />
+        <div class="pet-info">
+          <h2>Leo</h2>
+          <p><strong>Breed:</strong> Maine Coon</p>
+          <p><strong>Location:</strong> DLF,Hyderabad</p>
+          <button class="adopt-btn"
+          data-name="Leo"
+          data-breed="Maine Coon"
+          data-location="DLF,Hyderabad"
+          data-image="Photos\Cat\MaineCoonCat.jpg">Adopt Me</button>
+        </div>
+      </div>
+
+      <div class="pet-card" data-breed="Siamese">
+        <img src="Photos\Cat\siamesecat.jpg" alt="Cat 3" />
+        <div class="pet-info">
+          <h2>Cleo</h2>
+          <p><strong>Breed:</strong> Siamese</p>
+          <p><strong>Location:</strong> Jhansi, Uttar Pradesh</p>
+          <button class="adopt-btn"
+          data-name="Cleo"
+          data-breed="Siamese"
+          data-location="Jhansi,Uttar Pradesh"
+          data-image="Photos\Cat\siamesecat.jpg">Adopt Me</button>
+        </div>
+      </div>
+
+      <div class="pet-card" data-breed="Bengal">
+        <img src="Photos\Cat\bengalcat.webp" alt="Cat 4" />
+        <div class="pet-info">
+          <h2>Milo</h2>
+          <p><strong>Breed:</strong> Bengal</p>
+          <p><strong>Location:</strong>Aligarh,Uttar Pradesh</p>
+          <button class="adopt-btn"
+          data-name="Milo"
+          data-breed="Bengal"
+          data-location="Aligarh,Uttar Pradesh"
+          data-image="Photos\Cat\bengalcat.webp">Adopt Me</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
