@@ -2,18 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const checkboxes = document.querySelectorAll('.filter-checkbox');
   const petCards = document.querySelectorAll('.pet-card');
   const clearButton = document.getElementById('clear-filters');
-  const icon = document.querySelector('.icon');
-  const ul = document.querySelector('ul');
-
-  icon.addEventListener('click',()=>{
-    ul.classList.toggle('showData');
-    if(ul.className == 'showData'){
-      document.getElementById('bar').className = 'fa-solid fa-xmark';
-    }
-    else{
-      document.getElementById('bar').className = 'fa-solid fa-bars';
-    }
-  })
 
   checkboxes.forEach(checkbox => {
     checkbox.addEventListener('change', filterPets);
@@ -43,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
       card.style.display = 'block';
     });
   }
+
   const adoptButtons = document.querySelectorAll(".adopt-btn");
 
   adoptButtons.forEach((button) => {
