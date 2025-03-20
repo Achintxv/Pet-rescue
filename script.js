@@ -1,62 +1,62 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Scroll to Top Button
-    let scrollBtn = document.createElement("button");
-    scrollBtn.innerText = "⬆";
-    scrollBtn.id = "scrollToTop";
-    scrollBtn.style.cssText = "position:fixed; bottom:20px; right:20px; padding:10px 15px; font-size:20px; display:none; background:#ff6961; color:white; border:none; border-radius:50%; cursor:pointer;";
-    document.body.appendChild(scrollBtn);
+document.addEventListener('DOMContentLoaded', function() {
+  const checkboxes = document.querySelectorAll('.filter-checkbox');
+  const petCards = document.querySelectorAll('.pet-card');
+  const clearButton = document.getElementById('clear-filters');
+  const icon = document.querySelector('.icon');
+  const ul = document.querySelector('ul');
 
-    window.addEventListener("scroll", function() {
-        scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
-    });
-
-    scrollBtn.addEventListener("click", function() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-
-    // Pet Details Modal
-    let petCards = document.querySelectorAll(".pet-card");
-    petCards.forEach(card => {
-        card.addEventListener("click", function() {
-            let petName = this.querySelector("h3").innerText;
-            let petDesc = this.querySelector("p").innerText;
-            let petImg = this.querySelector("img").src;
-            
-            let modal = document.createElement("div");
-            modal.id = "petModal";
-            modal.style.cssText = "position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:white; padding:20px; border-radius:10px; box-shadow:0 0 15px rgba(0,0,0,0.2); text-align:center;";
-            modal.innerHTML = `
-                <img src="${petImg}" style="max-width:200px; border-radius:10px;">
-                <h2>${petName}</h2>
-                <p>${petDesc}</p>
-                <button id="closeModal" style="padding:10px 15px; background:#ff4747; color:white; border:none; border-radius:5px; cursor:pointer;">Close</button>
-            `;
-            document.body.appendChild(modal);
-
-            document.getElementById("closeModal").addEventListener("click", function() {
-                modal.remove();
-            });
-        });
-    });
-
-    // Form Validation for Contact
-    let contactForm = document.querySelector("#contact-form");
-    if (contactForm) {
-        contactForm.addEventListener("submit", function(event) {
-            let email = document.querySelector("#email").value;
-            let phone = document.querySelector("#phone").value;
-            let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-            let phoneRegex = /^[0-9]{10}$/;
-
-            if (!emailRegex.test(email)) {
-                alert("Please enter a valid email.");
-                event.preventDefault();
-            }
-
-            if (!phoneRegex.test(phone)) {
-                alert("Please enter a valid 10-digit phone number.");
-                event.preventDefault();
-            }
-        });
+  icon.addEventListener('click',()=>{
+    ul.classList.toggle('showData');
+    if(ul.className == 'showData'){
+      document.getElementById('bar').className = 'fa-solid fa-xmark';
     }
+    else{
+      document.getElementById('bar').className = 'fa-solid fa-bars';
+    }
+  })
+
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', filterPets);
+  });
+
+  clearButton.addEventListener('click', () => {
+    checkboxes.forEach(cb => cb.checked = false);
+    showAllPets();
+  });
+
+  function filterPets() {
+    const checkedBoxes = Array.from(checkboxes).filter(cb => cb.checked);
+    const selectedBreeds = checkedBoxes.map(cb => cb.value);
+
+    petCards.forEach(card => {
+      const breed = card.getAttribute('data-breed');
+      if (selectedBreeds.length === 0 || selectedBreeds.includes(breed)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function showAllPets() {
+    petCards.forEach(card => {
+      card.style.display = 'block';
+    });
+  }
+  const adoptButtons = document.querySelectorAll(".adopt-btn");
+
+  adoptButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const name = button.getAttribute("data-name");
+      const breed = button.getAttribute("data-breed");
+      const location = button.getAttribute("data-location");
+      const image = button.getAttribute("data-image");
+
+      // Construct the URL for the animal details page
+      const url = `adopt.html?name=${encodeURIComponent(name)}&breed=${encodeURIComponent(breed)}&location=${encodeURIComponent(location)}&image=${encodeURIComponent(image)}`;
+
+      // Redirect to the details page
+      window.location.href = url;
+    });
+  });
 });
