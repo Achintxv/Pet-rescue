@@ -100,6 +100,10 @@ nav ul li a:hover {
 
 .section1 .sponsers{
     justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
 }
 
 .pet-gallery {
@@ -117,9 +121,46 @@ nav ul li a:hover {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
+.pet-card a{
+    text-decoration: none;
+    color: #5a3d2b;
+}
+
+.pet-card a:hover{
+    color: #ff4747;
+}
+
 .pet-card img {
     width: 100%;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.pet-card img:hover {
+    transform: scale(1.05);
+}
+
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-between; */
+    gap: 40px;
+}
+
+#contact a{
+    text-decoration: none;
+    color: #5a3d2b;
+}
+
+#contact a:hover{
+    color: #ff4747;
+}
+
+#contact img{
+    width: 200px;
+    height: auto;
+
 }
 
 /* Buttons */
@@ -180,6 +221,11 @@ footer {
     text-decoration: none;
 }
 
+.box-container .box a:hover {
+    color: #ff4747;
+}
+
+
 .box-container .box .btn{
     background-color: #ff6961;
     color: white;
@@ -236,4 +282,37 @@ footer {
 
 .footer-bottom .icons a:hover {
     color: #ff4747
+}
+
+.icon{
+    align-items: center;
+    font-size: 30px;
+    margin-right: 12px;
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+    nav ul{
+        display: none;
+    }
+    .icon{
+        display: flex;
+        cursor: pointer;
+    }
+    .showData{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        height: 240px;
+        background:#ffcccb;
+        text-align: center;
+        padding: 0px;
+        gap: 22px;
+        border-radius: 5px;
+    }
 }
