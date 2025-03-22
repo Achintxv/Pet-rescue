@@ -1,0 +1,57 @@
+body{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffcccb;
+    color:#5a3d2b;
+    border-radius: 0.5rem;
+}
+
+.details-container{
+    margin-top: 1rem;
+    background: #ffdab9;
+    border-radius: 0.5rem;
+}
+
+.animal-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#animal-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 30%;
+    margin: 2rem;
+    border-radius: 0.5rem;
+}
+
+.animal-info{
+    justify-content: center;
+    align-items: center;
+}
+
+#adopt-now-btn{
+    background-color: #ff6961;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#adopt-now-btn:hover{
+    padding: .5rem;
+    border: 2px solid #ff4747;
+    border-radius: 2rem;
+    background: #fff;
+    color: #ff4747;
+}
