@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animal Details</title>
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+</head>
+<body>
+  <header>
+    <h1>Adopt Me!</h1>
+  </header>
+
+  <div class="details-container">
+    <div class="animal-card">
+      <img id="animal-image" src="" alt="Animal Image" />
+      <div class="animal-info">
+        <h2 id="animal-name"></h2>
+        <p><strong>Breed:</strong> <span id="animal-breed"></span></p>
+        <p><strong>Location:</strong> <span id="animal-location"></span></p>
+        <button id="adopt-now-btn">Adopt Now</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Function to get URL parameters
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    // Load animal details into the page
+    document.addEventListener("DOMContentLoaded", () => {
+      const name = getQueryParam("name");
+      const breed = getQueryParam("breed");
+      const location = getQueryParam("location");
+      const image = getQueryParam("image");
+
+      document.getElementById("animal-name").innerText = name;
+      document.getElementById("animal-breed").innerText = breed;
+      document.getElementById("animal-location").innerText = location;
+      document.getElementById("animal-image").src = image;
+
+      document.getElementById("adopt-now-btn").addEventListener("click", () => {
+        alert(`Thank you for adopting ${name}!`);
+      });
+    });
+  </script>
+</body>
+</html>
