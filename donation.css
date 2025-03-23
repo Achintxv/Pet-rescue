@@ -1,0 +1,53 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fffaf0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  header h1 {
+    color: #5a3d2b;
+    margin: 0;
+    font-size: 2em;
+    padding: 1rem;
+  }
+  
+  .donation-container {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-left: -10px;
+  }
+  
+  button {
+    background-color: #ff6961;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  
+  #response-message {
+    margin-top: 20px;
+    color: #5a3d2b;
+  }
+  
