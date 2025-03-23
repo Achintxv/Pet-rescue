@@ -31,7 +31,7 @@
 | **Backend**  | Node.js with Express (suggested) |
 | **Database** | PostgreSQL                       |
 
-- **FontAwesome** - Icons for buttons and social media.
+- **FontAwesome** - Icons for social media.
 - **PostgreSQL** - Secure storage for donation data.
 
 ---
@@ -108,6 +108,15 @@ git clone https://github.com/Achintxv/Pet-rescue.git
 - **Payment Gateway Integration**: For secure online donations.
 - **Volunteer & Foster Applications**: Get involved beyond donations and adoptions.
 - **Pet Matching AI (Future)**: Recommend pets based on user preferences.
+
+---
+
+## ✨ Contributors
+| Name           | GitHub Profile                           | Contributions                                                  |
+|----------------|------------------------------------------|---------------------------------------------------------------|
+| Achint Verma   | [@Achintxv](https://github.com/Achintxv) | JavaScript, Backend, Database Setup, Testing & Debugging |
+| Nikhil Kumar  | [@nikhil0019](https://github.com/nikhil0019) | Html and Image Integration, Testing & Debugging |
+| Khushi Dhruw  | [@kdhruw05](https://github.com/kdhruw05) | CSS, Website Designing, Page Layout, Testing & Debugging |
 
 ---
 
