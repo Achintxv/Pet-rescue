@@ -45,7 +45,7 @@ Pet-Rescue/
 ├── indexcat.html         # Cat adoption page (Pet Listings)
 ├── indexanimal.html      # Animal adoption page (Pet Listings)
 ├── adopt.html            # Detailed Pet Profile page
-├── donate.html           # Donation form page
+├── donation.html         # Donation form page
 │
 ├── style.css             # General styling for dog, cat and other animal webpage
 ├── styles.css            # General styling
