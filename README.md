@@ -39,6 +39,7 @@
 ## 📂 File Structure
 ```
 Pet-Rescue/
+├── Photos                # Pet images
 │
 ├── index.html            # Home page (Pet Listings)
 ├── indexdog.html         # Dog adoption page (Pet Listings)
