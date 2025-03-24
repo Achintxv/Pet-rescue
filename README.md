@@ -41,15 +41,20 @@
 Pet-Rescue/
 │
 ├── index.html            # Home page (Pet Listings)
+├── indexdog.html         # Dog adoption page (Pet Listings)
+├── indexcat.html         # Cat adoption page (Pet Listings)
+├── indexanimal.html      # Animal adoption page (Pet Listings)
 ├── adopt.html            # Detailed Pet Profile page
 ├── donate.html           # Donation form page
 │
-├── style.css             # General styling
+├── style.css             # General styling for dog, cat and other animal webpage
+├── styles.css            # General styling
 ├── adopt.css             # Styling specific to adoption pages
+├── donation.css          # Styling specific to donation page
 │
 ├── script.js             # Homepage logic (search/filter)
 ├── adopt.js              # Adopt page functionality
-├── donate.js             # Handles donation form submission (Frontend)
+├── donation.js           # Handles donation form submission (Frontend)
 │
 ├── server.js             # Node.js/Express backend server
 ├── db.js
